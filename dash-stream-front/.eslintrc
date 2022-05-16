@@ -1,0 +1,57 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "react-hooks"],
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:prettier/recommended",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    // Make prettier code formatting suggestions more verbose.
+    "prettier/prettier": ["warn"],
+    // Disable <Fragment> => <> replacement. Feel free to change
+    "react/jsx-fragments": "off",
+    // Prop-types
+    "react/prop-types": "off",
+    // A11y
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/no-autofocus": "off",
+    // Props spreading
+    "react/jsx-props-no-spreading": "off",
+    // Object
+    "react/destructuring-assignment": "off",
+    // console
+    "no-console": "off",
+    // default export
+    "import/prefer-default-export": "off",
+    // ++
+    "no-plusplus": "off",
+    // param reassign
+    "no-param-reassign": "off",
+    // eslint rules
+    "default-param-last": "off",
+    "@typescript-eslint/default-param-last": "off",
+    "no-restricted-globals": "off",
+    "no-trailing-spaces": "error",
+    "import/no-cycle": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

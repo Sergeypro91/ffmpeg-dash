@@ -1,0 +1,10 @@
+{
+  "name": "ffmpeg-dash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "fs-extra": "^10.1.0"
+  }
+}
